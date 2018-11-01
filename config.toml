@@ -1,3 +1,88 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+#baseurl = "https://blog.capitao.fr/"
+baseurl = "http://127.0.0.1:1313/"
+title = "Joel Capitao"
+
+theme = "coder-portfolio"
+
+DefaultContentLanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
+
+disqusShortname ="yourdiscussshortname"
+
+[params]
+    author = "Joel Capitao"
+    description = "This is my garage, somewhere in the Internet, where I share you experience and thoughts."
+    keywords = "blog,developer,personal"
+    info = "WEB AND APPS ENGINEER"
+    avatarurl = "images/avatar.jpg"
+    footercontent = "Enter a text here."
+    fixedbarContent = "Do you want to know me more private?→"
+    fixedbarContentAfter = "Thank You! Please share it if you like it→"
+
+    hideCredits = false
+    hideCopyright = false
+
+    snsShare = true
+
+    thumbnail = "images/tn.png"
+
+    # Custom CSS
+    custom_css = []
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+    langseparator = "|"
+
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/JoelCapitao/"
+[[params.social]]
+    name = "Twitter"
+    weight = 2
+    url = "https://twitter.com/JoelCapitao/"
+
+[languages]
+    [languages.en]
+        languagecode = "en"
+        languagename = "English"
+        title = "Joel Capitao"
+
+        [languages.en.params]
+            author = "Yusuke Ishimi"
+            info = "WEB AND APPS ENGINEER"
+            description = "Yusuke Ishimi's personal website"
+            keywords = "blog,developer,personal"
+
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1.0
+                url = "en/about"
+
+    [languages.fr]
+        languagecode = "fr"
+        languagename = "Français"
+        title = "Joel Capitao"
+
+        [languages.fr.params]
+            author = "Joel Capitao"
+            description = ""
+            keywords = "blog,developer,strona domowa"
+            info = ""
+
+        [languages.fr.menu]
+            [[languages.fr.menu.main]]
+                name = "A propos"
+                weight = 1.0
+                url = "fr/about"
