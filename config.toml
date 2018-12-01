@@ -18,14 +18,11 @@ disqusShortname ="yourdiscussshortname"
 [params]
     author = "Joel Capitao"
     description = "This is my garage, somewhere in the Internet, where I share you experience and thoughts."
-    keywords = "blog,developer,personal"
-    info = "WEB AND APPS ENGINEER"
+    keywords = ""
+    info = ""
     avatarurl = "images/avatar.jpg"
-    footercontent = "Enter a text here."
-    fixedbarContent = "Do you want to know me more private?→"
-    fixedbarContentAfter = "Thank You! Please share it if you like it→"
 
-    hideCredits = false
+    hideCredits = true
     hideCopyright = false
 
     snsShare = true
@@ -59,10 +56,10 @@ disqusShortname ="yourdiscussshortname"
         title = "Joel Capitao"
 
         [languages.en.params]
-            author = "Yusuke Ishimi"
-            info = "WEB AND APPS ENGINEER"
-            description = "Yusuke Ishimi's personal website"
-            keywords = "blog,developer,personal"
+            author = "Joel Capitao"
+            info = ""
+            description = ""
+            keywords = ""
 
         [languages.en.menu]
             [[languages.en.menu.main]]
@@ -78,7 +75,7 @@ disqusShortname ="yourdiscussshortname"
         [languages.fr.params]
             author = "Joel Capitao"
             description = ""
-            keywords = "blog,developer,strona domowa"
+            keywords = ""
             info = ""
 
         [languages.fr.menu]
