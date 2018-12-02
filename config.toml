@@ -5,6 +5,7 @@ title = "Joel Capitao"
 theme = "coder-portfolio"
 
 DefaultContentLanguage = "en"
+summaryLength = "40"
 
 paginate = 20
 
