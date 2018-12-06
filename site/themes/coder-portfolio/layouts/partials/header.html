@@ -1,0 +1,27 @@
+<header id="header">
+  <div id="navigation">
+    <a class="logo" title="Home" href="{{ print "/" | relLangURL }}">{{ .Site.Title }}</a>
+    <ul>
+      {{ with .Site.Menus.main}}
+        {{ range sort . }}
+          <li>
+            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if .Site.IsMultiLingual }}
+        {{ $node := . }}
+        {{ .Scratch.Set "separator" true }}
+        {{ with .Site.Params.LangSeparator }}
+        {{ end }}
+        {{ range .Site.Home.AllTranslations }}
+          {{ if ne $.Site.Language .Language }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</header>
