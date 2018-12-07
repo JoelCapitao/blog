@@ -34,7 +34,7 @@ body {
 
 a {
   font-weight: 700;
-  color: rgba(0,0,0,0.4);
+  color: $nav-link-color;
   text-decoration: none;
   transition: color 0.2s ease-out;
   &:focus,

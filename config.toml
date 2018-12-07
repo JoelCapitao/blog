@@ -1,5 +1,4 @@
-#baseurl = "https://blog.capitao.fr/"
-baseurl = "http://127.0.0.1:1313/"
+baseURL = "http://localhost:1313/"
 title = "Joel Capitao"
 
 theme = "coder-portfolio"

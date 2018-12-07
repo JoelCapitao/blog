@@ -49,9 +49,8 @@
     <main class="wrapper">
       {{ partial "header.html" . }}
 
-      <div class="content">
-        {{ block "content" . }}{{ end }}
-      </div>
+      {{ block "content" . }}{{ end }}
+
       {{ if or (.Site.Params.fixedbarContent) (.Site.Params.snsShare)}}
         {{ partial "footer.html" . }}
       {{ end }}
