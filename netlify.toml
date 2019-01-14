@@ -2,9 +2,11 @@
   publish = "public"
   command = "hugo --config=config.toml"
 
+[context.production]
+  command = "hugo --config=config.toml,config.prod.toml"
+
 [context.production.environment]
   HUGO_VERSION = "0.52"
-  HUGO_ENV = "netlify"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.52"
