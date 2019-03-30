@@ -2,7 +2,7 @@ baseurl = "https://localhost:1313/"
 languageCode = "fr"
 title = "Joel Capitao's blog"
 theme = "kiss"
-copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
+copyright = "&copy; <a href=\"https://github.com/JoelCapitao\">Joel Capitao</a> 2019"
 disqusShortname = "shortname"
 googleAnalytics = ""
 Paginate = 5
@@ -20,7 +20,7 @@ customCSS = ["css/custom.css"]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = true # Adds OpenGraph and Twitter cards
 homeTitle = "Joel Capitao's blog"
-poweredby = false
+poweredby = true
 related = true
 codeCopy = false
 
