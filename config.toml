@@ -1,85 +1,60 @@
-baseURL = "http://localhost:1313/"
-title = "Joel Capitao"
+baseurl = "https://localhost:1313/"
+languageCode = "fr"
+title = "Joel Capitao's blog"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
+disqusShortname = "shortname"
+googleAnalytics = ""
+Paginate = 5
+enableRobotsTXT = true
 
-theme = "coder-portfolio"
+[params.rss]
+includeContent = true
+authorName = "Joel Capitao"
+authorEmail = "joel@capitao.fr"
 
-DefaultContentLanguage = "en"
-summaryLength = "40"
+[params.assets]
+customCSS = ["css/custom.css"]
 
-paginate = 20
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "Joel Capitao's blog"
+poweredby = false
+related = true
+codeCopy = false
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-pygmentsUseClasses = true
+[params.features]
+disqusOnDemand = false
 
-disqusShortname ="yourdiscussshortname"
 
-[params]
-    author = "Joel Capitao"
-    description = "This is my garage, somewhere in the Internet, where I share you experience and thoughts."
-    keywords = ""
-    info = ""
-    avatarurl = "images/avatar.jpg"
+[params.opengraph.facebook]
+admins = []
+appID = ""
+pageID = ""
 
-    hideCredits = true
-    hideCopyright = false
+[params.opengraph.twitter]
+page = "JoelCapitao"
 
-    snsShare = true
+[params.social]
+twitter = "JoelCapitao"
+github = "JoelCapitao"
+email = "joel@capitao.fr"
+linkedin = ""
+facebook = ""
+instagram = ""
+codepen = ""
+rss = "index.xml"
 
-    thumbnail = "images/tn.png"
+[params.social.config]
+platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin"]
 
-    # Custom CSS
-    custom_css = []
+[params.matomoAnalytics]
+siteID = 1
+rootURL = "//matomo.example.com/"
 
-    # Alignment of Mobile Menu items
-    itemscentered = true
+[taxonomies]
+tag ="tags"
 
-    # RTL support
-    rtl = false
-
-    langseparator = "|"
-
-[[params.social]]
-    name = "Github"
-    weight = 1
-    url = "https://github.com/JoelCapitao/"
-[[params.social]]
-    name = "Twitter"
-    weight = 2
-    url = "https://twitter.com/JoelCapitao/"
-
-[languages]
-    [languages.en]
-        languagecode = "en"
-        languagename = "English"
-        title = "Joel Capitao"
-
-        [languages.en.params]
-            author = "Joel Capitao"
-            info = ""
-            description = ""
-            keywords = ""
-
-        [languages.en.menu]
-            [[languages.en.menu.main]]
-                name = "About"
-                weight = 1.0
-                url = "en/about"
-
-    [languages.fr]
-        languagecode = "fr"
-        languagename = "Français"
-        title = "Joel Capitao"
-
-        [languages.fr.params]
-            author = "Joel Capitao"
-            description = ""
-            keywords = ""
-            info = ""
-
-        [languages.fr.menu]
-            [[languages.fr.menu.main]]
-                name = "A propos"
-                weight = 1.0
-                url = "fr/about"
+[blackfriday]
+hrefTargetBlank = true
